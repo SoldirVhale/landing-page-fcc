@@ -5,49 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/3d81f58312.js" crossorigin="anonymous"></script>
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
     <title>Mythic Edge Axes - Find your dream axe!</title>
 </head>
 <body>
     <header id="header">
-        <img id="header-img" src="" alt="Mythic Axes Logo">
         <nav id="nav-bar">
-            <ul>
-                <li><a id="nav-link" href="" >Features</a></li>
-                <li><a id="nav-link" href="">How it works</a></li>
-                <li><a id="nav-link" href="">Pricing</a></li>
+            <img id="header-img" src="images/mythic edge axes.webp" alt="Mythic Axes Logo">
+            <ul id="nav-list">
+                <li><a class="nav-link" href="">Features</a></li>
+                <li><a class="nav-link" href="">How it works</a></li>
+                <li><a class="nav-link" href="">Pricing</a></li>
             </ul>
         </nav>    
     </header>
     <div id="newsletter">
-        <h2></h2>
-        <p></p>
+        <h2>Handcrafted, home-made masterpieces</h2>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input id="email" type="email" placeholder="Enter your email address..." required="" data-np-autofill-field-type="email" data-np-uid="d61fc8e1-1947-47bd-83e9-6aa20065cf85">
-            <input id="submit" type="submit"  data-np-autofill-form-type="subscribe" data-np-checked="1" data-np-watching="1" value="Get Started!">
+            <input id="email" type="email" placeholder="Enter your email address..." required="" >
+            <input id="submit" type="submit" value="Get Started!">
         </form>
     </div>
     <div id="main-div">
-        <div id="icon-div">
-            <i class="fa-solid fa-fire"></i>
+        <div id="grid">
+          <div id="icon-div">
+            <i class="fa-solid fa-hammer"></i>
+          </div>
+          <div id="desc-div">
+            <h2>Artisan Craftsmanship</h2>
+            <p>Every Mythic Edge Axe is handcrafted by master blacksmiths, combining ancient techniques with modern precision. Each axe is a unique masterpiece, ensuring no two are alike.</p>
+          </div>
         </div>
-        <div id="icon-div">
-            <i class="fa-solid fa-truck"></i>
+        <div id="grid">
+            <div id="icon-div">
+              <i class="fa-solid fa-fire"></i>
+            </div>
+            <div id="desc-div">
+              <h2>Customized Enchantments</h2>
+              <p>Customize your axe with mythical runes for various abilities, from flame-touched blades to ice-forged edges. Our unique enchanting process imbues each axe with magical powers tailored to your style.</p>
+            </div>
         </div>
-        <div id="icon-div">
-            <i class="fa-solid fa-battery-full"></i>
+        <div id="grid">
+          <div id="icon-div">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <div id="desc-div">
+            <h2>Lifetime Durability Guarantee</h2>
+            <p>Our axes, built to last generations, come with a Lifetime Durability Guarantee. Crafted from the finest materials sourced from mythical Eldoria, they're designed to withstand both real and imagined battles.</p>
+          </div>
         </div>
-        <div id="desc-div">
-            <h2></h2>
-            <p></p>
-        </div>
-        <div id="desc-div">
-            <h2></h2>
-            <p></p>
-        </div>
-        <div id="desc-div">
-            <h2></h2>
-            <p></p>
-        </div>
+        
     </div>  
     <div id="video-div">
         <iframe id="video"></iframe>
