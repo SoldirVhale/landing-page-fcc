@@ -77,7 +77,6 @@ body::-webkit-scrollbar {
     margin: 0 10vw 0 10vw;
     background-color: rgba(0,0,0,0.7);
     border: 1px solid #FFFFFF;
-    max-width: 1000px;
 }
 
 #container {
@@ -107,9 +106,10 @@ header {
 #nav-list {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 60px;
     list-style: none;
-    padding-right: 20px;
+    padding-right: 25px;
+    font-size: 30px;
 }
 
 /*NEWSLETTER*/
@@ -118,6 +118,7 @@ header {
     text-align: center;
     padding: 20px;
     font-family: "Merriweather", serif;
+    font-size: x-large;
     color: #F8ECC2;
     text-shadow: 3px 3px 6px #000000;
 }
@@ -244,7 +245,7 @@ header {
 .product > ol {
     padding: 0px 10px 0px 10px;
     font-family: "Merriweather", serif;
-    font-size: xx-small;
+    font-size: x-small;
 }
 
 .product > ol > li {
@@ -276,10 +277,6 @@ header {
 
 #adventurer h2 {
     color: #CD7F32;
-}
-
-#adventurer ol > li {
-    padding-bottom: 22px;
 }
 
 
