@@ -1,28 +1,54 @@
-:root {
-    --main-titles: #F8ECC2;
-    --body-text:  #D9D9D9;
-    --subsec-text: #E8E8E8;
-    --footer-text: #B3B3B3 ;
-    --adventurer-font: #3C2F2F;
-    --adventurer-main: #CD7F32;
-    --adventurer-sub: #E1B382;
-    --adventurer-hue: #F4E1D2;
-    --adventure-btn-main: #1D8348;
-    --adventure-btn-sub: #145A32;
-    --legendary-font: #212F3D;
-    --legendary-main: #C0C0C0;
-    --legendary-sub: #D3D3D3;
-    --legendary-hue: #F0F0F0;
-    --adventure-btn-main: #2E86C1;
-    --adventure-btn-sub: #1A5276;
-    --mythic-font: #273746;
-    --mythic-main: #DAA520;
-    --mythic-sub: #FAD7A0;
-    --mythic-hue: #FFF9E6;
-    --adventure-btn-main: #641E16;
-    --adventure-btn-sub: #512E5F;
-}
+@media (max-width: 600px) {
+    #container {
+        height: 3vh
+    }
 
+    #pricing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    #adventurer.product {
+        width: 90%;
+    }
+
+    #adventurer #btn {
+        margin-top: 20px;
+    }
+
+    #legendary.product {
+        width: 90%;
+    }
+
+    #mythic.product {
+        width: 90%;
+    }
+
+    #video-section {
+        margin: 20px 0 20px 0;
+    }
+
+    #grid {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #icon-div {
+        margin: 10px 0 15px 0;
+    }
+
+    #desc-div {
+        padding-right: 25px;
+    }
+}
 
 * {
     margin: 0;
@@ -40,7 +66,7 @@ a {
     text-decoration: none;
     font-family: "Merriweather", serif;
     font-weight: bold;
-    color: var(--main-titles)
+    color: #F8ECC2;
 }
 
 body::-webkit-scrollbar {
@@ -50,7 +76,7 @@ body::-webkit-scrollbar {
 #page-wrapper {
     margin: 0 10vw 0 10vw;
     background-color: rgba(0,0,0,0.7);
-    border: 1px solid white;
+    border: 1px solid #FFFFFF;
     max-width: 1000px;
 }
 
@@ -66,12 +92,10 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: #000000;
-    
+    background-color: #010715;
 }
 
 .logo {
-    background-color: #000000;
     width: 60vw;
 }
 
@@ -92,9 +116,9 @@ header {
 
 #newsletter {
     text-align: center;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
     font-family: "Merriweather", serif;
-    color: var(--main-titles);
+    color: #F8ECC2;
     text-shadow: 3px 3px 6px #000000;
 }
 
@@ -114,8 +138,8 @@ header {
 #submit {
     padding: 5px 30px 5px 30px;
     background: linear-gradient(to right, #1D8348, #145A32);
-    color: white;
-    border:none;
+    color: #FFFFFF;
+    border: none;
     cursor: pointer;
     text-transform: uppercase;
     border-radius: 3px;
@@ -151,16 +175,16 @@ header {
     align-self: center;
     font-size: 30px;
     text-align: center;
-    color: orangered;
-    text-shadow: 2px 2px 4px black;
+    color: #FF4500;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 #desc-div {
     display: flex;
     flex-direction: column;
-    color:  var(--main-titles);
+    color:  #F8ECC2;
     margin-left: 30px;
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 #desc-div > h2 {
@@ -170,16 +194,16 @@ header {
 }
 
 #desc-div > p {
-    color: var(--body-text);
+    color: #D9D9D9;
 }
 
 /*VIDEO*/
 
-#video {
+#video-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px;
+    margin: 40px;
 }
 
 /*BUNDLES*/
@@ -196,8 +220,8 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: calc(100% / 4);
-    margin: 5px; 
+    width: calc(100% / 3);
+    margin: 5px;
     padding-bottom: 20px;
 }
 
@@ -205,7 +229,7 @@ header {
     margin-bottom: 15px;
     width: 100%;
     padding: 15px 0 15px 0;
-    font-size: xx-large;
+    font-size: 22px;
     font-weight: bold;
     font-family: "Merriweather", serif;
 }
@@ -267,7 +291,7 @@ header {
     background: linear-gradient(to right, #1D8348, #145A32);
     color: #FDFEFE;
     border: 2px double #145A32;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px #000000;
 }
 
 #adventurer #btn:hover {
@@ -298,7 +322,7 @@ header {
     background: linear-gradient(to right, #2E86C1, #1A5276);
     color: #FFFFFF;
     border: 2px double #1A5276;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px #000000;
 }
 
 #legendary #btn:hover {
@@ -329,7 +353,7 @@ header {
     background: linear-gradient(to right, #641E16, #512E5F);
     color: #FFFFFF;
     border: 2px double #512E5F;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px #000000;
 }
 
 #mythic #btn:hover {
@@ -341,14 +365,14 @@ header {
 .product > h2:hover {
     transform: scale(1.1); 
     transition: transform 0.3s ease-in-out; 
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 /*FOOTER*/
 
 footer {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
-    color: white;
+    background-color: #010715;
+    color: #FFFFFF;
     padding: 20px 0 20px 0;
 }
 
